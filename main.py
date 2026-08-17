@@ -35,7 +35,7 @@ def generate_letter(name, receiver):
     return msg_body
 
 try:
-    with open("data/birthdays.csv") as data_file:
+    with open("birthdays.csv") as data_file:
         birthdays = pd.read_csv(data_file)
 except FileNotFoundError:
     print("No birthdays.csv found")
